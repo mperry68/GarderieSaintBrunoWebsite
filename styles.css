@@ -648,6 +648,23 @@ nav {
     color: #666;
 }
 
+.contact-image-section {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.contact-image-section img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    display: block;
+    margin: 0 auto;
+}
+
 .map-section {
     max-width: 1200px;
     margin: 3rem auto;
