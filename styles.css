@@ -649,15 +649,8 @@ nav {
 }
 
 .contact-image-item {
-    padding: 0;
-    background: none;
-    border: none;
-    margin-top: 1rem;
-}
-
-.contact-image-item:hover {
-    transform: none;
-    box-shadow: none;
+    margin-top: 0;
+    width: 100%;
 }
 
 .contact-image-item img {
@@ -666,6 +659,7 @@ nav {
     border-radius: 10px;
     box-shadow: var(--shadow);
     display: block;
+    object-fit: contain;
 }
 
 .map-section {
