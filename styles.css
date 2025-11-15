@@ -533,6 +533,7 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    width: 100%;
 }
 
 .contact-item {
@@ -650,19 +651,15 @@ nav {
 
 .contact-image-wrapper {
     width: 100%;
-    max-width: 100%;
-    margin-top: 2rem;
-    overflow: hidden;
+    margin-top: 0;
 }
 
 .contact-image-wrapper img {
     width: 100%;
-    max-width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: var(--shadow);
     display: block;
-    object-fit: contain;
 }
 
 .map-section {
