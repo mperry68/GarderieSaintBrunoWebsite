@@ -92,7 +92,7 @@ nav {
 
 .hero-image img {
     width: 100%;
-    height: 400px;
+    height: 500px;
     object-fit: cover;
     border-radius: 10px;
     box-shadow: var(--shadow);
@@ -178,6 +178,205 @@ nav {
     transform: scale(1.05);
 }
 
+/* Food Section */
+.food-section {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+.food-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+}
+
+.food-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.food-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.food-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+.food-text strong {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.food-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.food-gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s;
+}
+
+.food-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Nursery Section */
+.nursery-section {
+    background-color: var(--light-bg);
+    padding: 4rem 2rem;
+    margin: 3rem 0;
+}
+
+.nursery-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+}
+
+.nursery-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.nursery-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.nursery-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+.nursery-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.nursery-gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s;
+}
+
+.nursery-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Microgreen Section */
+.microgreen-section {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+.microgreen-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+}
+
+.microgreen-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.microgreen-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.microgreen-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.microgreen-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.microgreen-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+.microgreen-text strong {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Program Section */
+.program-section {
+    background-color: var(--light-bg);
+    padding: 4rem 2rem;
+    margin: 3rem 0;
+}
+
+.program-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+}
+
+.program-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.program-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.program-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+.program-text strong {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
 /* CTA Section */
 .cta {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
@@ -239,7 +438,7 @@ nav {
 }
 
 .contact-info h2,
-.contact-form-container h2 {
+.testimonials-container h2 {
     color: var(--primary-color);
     font-size: 2rem;
     margin-bottom: 2rem;
@@ -283,38 +482,72 @@ nav {
     font-style: italic;
 }
 
-.contact-form {
+/* Testimonials Section */
+.testimonials-container {
     background: var(--light-bg);
     padding: 2rem;
     border-radius: 10px;
 }
 
-.form-group {
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.testimonial-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-content {
+    flex: 1;
     margin-bottom: 1.5rem;
 }
 
-.form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: var(--text-color);
-    font-weight: 500;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 0.75rem;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    font-family: inherit;
+.testimonial-text {
     font-size: 1rem;
-    transition: border-color 0.3s;
+    line-height: 1.7;
+    color: var(--text-color);
+    font-style: italic;
+    position: relative;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: var(--primary-color);
+.testimonial-text::before {
+    content: '"';
+    font-size: 3rem;
+    color: var(--primary-color);
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    opacity: 0.3;
+    font-family: Georgia, serif;
+}
+
+.testimonial-author {
+    border-top: 2px solid var(--light-bg);
+    padding-top: 1rem;
+}
+
+.author-name {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+}
+
+.author-role {
+    font-size: 0.9rem;
+    color: #666;
 }
 
 .map-section {
@@ -361,14 +594,37 @@ footer p {
         grid-template-columns: 1fr;
     }
 
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
     .nav-menu {
         gap: 1rem;
     }
 
     .hero-content h2,
     .features h2,
-    .gallery h2 {
+    .gallery h2,
+    .food-section h2,
+    .nursery-section h2,
+    .microgreen-section h2,
+    .program-section h2 {
         font-size: 2rem;
+    }
+
+    .food-content,
+    .nursery-content,
+    .microgreen-content {
+        grid-template-columns: 1fr;
+    }
+
+    .food-gallery,
+    .nursery-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .microgreen-image {
+        order: -1;
     }
 
     .contact-hero h1 {
