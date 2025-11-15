@@ -648,18 +648,17 @@ nav {
     color: #666;
 }
 
-.contact-image-item {
-    margin-top: 0;
+.contact-image-wrapper {
     width: 100%;
+    margin-top: 2rem;
 }
 
-.contact-image-item img {
+.contact-image-wrapper img {
     width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: var(--shadow);
     display: block;
-    object-fit: contain;
 }
 
 .map-section {
