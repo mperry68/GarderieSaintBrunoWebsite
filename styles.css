@@ -455,15 +455,15 @@ nav {
 }
 
 .cta-description {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 2.5rem;
     line-height: 1.7;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    text-shadow: 0 2px 6px rgba(0,0,0,0.25);
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
     color: var(--white);
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .btn-primary {
@@ -675,7 +675,7 @@ footer {
     color: var(--white);
     text-align: center;
     padding: 2rem;
-    margin-top: 4rem;
+    margin-top: 0;
 }
 
 footer p {
@@ -709,7 +709,7 @@ footer p {
     }
 
     .cta-description {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .btn-primary {
