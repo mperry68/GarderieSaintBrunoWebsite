@@ -650,15 +650,19 @@ nav {
 
 .contact-image-wrapper {
     width: 100%;
+    max-width: 100%;
     margin-top: 2rem;
+    overflow: hidden;
 }
 
 .contact-image-wrapper img {
     width: 100%;
+    max-width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: var(--shadow);
     display: block;
+    object-fit: contain;
 }
 
 .map-section {
