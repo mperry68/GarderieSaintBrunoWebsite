@@ -70,38 +70,36 @@ nav {
 
 /* Hero Section */
 .hero {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.hero-image {
     position: relative;
     width: 100%;
     height: 600px;
-    overflow: hidden;
-}
-
-.hero-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.hero-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    background-image: url('public/images/Charlie-M-1-1 (1).jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 2rem;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5));
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
     color: var(--white);
 }
 
@@ -609,7 +607,7 @@ footer p {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .hero-image {
+    .hero {
         height: 500px;
     }
 
