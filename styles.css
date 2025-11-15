@@ -652,8 +652,6 @@ nav {
     padding: 0;
     background: none;
     border: none;
-    border-radius: 10px;
-    overflow: hidden;
     margin-top: 1rem;
 }
 
@@ -664,10 +662,7 @@ nav {
 
 .contact-image-item img {
     width: 100%;
-    max-width: 100%;
     height: auto;
-    max-height: 400px;
-    object-fit: cover;
     border-radius: 10px;
     box-shadow: var(--shadow);
     display: block;
