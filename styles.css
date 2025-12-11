@@ -27,6 +27,64 @@ body {
     background-color: var(--white);
 }
 
+/* Notification Strip */
+.notification-strip {
+    background: linear-gradient(135deg, #E63946 0%, #C1121F 100%);
+    color: var(--white);
+    padding: 1.5rem 2rem;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(230, 57, 70, 0.4), 0 2px 8px rgba(0,0,0,0.2);
+    border-bottom: 4px solid rgba(255, 255, 255, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1001;
+    width: 100%;
+    overflow: hidden;
+}
+
+.notification-strip::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    animation: shine 3s infinite;
+}
+
+@keyframes shine {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+.notification-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.notification-content p {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.8;
+    text-shadow: 0 3px 8px rgba(0,0,0,0.4), 0 1px 3px rgba(0,0,0,0.3);
+    letter-spacing: 0.5px;
+}
+
+.notification-content strong {
+    font-weight: 900;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 /* Header & Navigation */
 header {
     background-color: var(--white);
@@ -136,32 +194,6 @@ nav {
     line-height: 1.6;
 }
 
-/* Notification Strip */
-.notification-strip {
-    background: linear-gradient(135deg, var(--secondary-color) 0%, #D8965F 100%);
-    color: var(--white);
-    padding: 1.5rem 2rem;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-.notification-content {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.notification-content p {
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin: 0;
-    line-height: 1.6;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
-}
-
-.notification-content strong {
-    font-weight: 800;
-    font-size: 1.4rem;
-}
 
 /* Features Section */
 .features {
@@ -744,15 +776,15 @@ footer p {
     }
 
     .notification-strip {
-        padding: 1.2rem 1.5rem;
+        padding: 1.5rem 1.5rem;
     }
 
     .notification-content p {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 
     .notification-content strong {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     .cta {
