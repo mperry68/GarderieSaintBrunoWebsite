@@ -350,24 +350,27 @@ nav {
 }
 
 .nursery-content {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    align-items: start;
 }
 
 .nursery-text {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    text-align: center;
 }
 
 .nursery-text p {
     font-size: 1.1rem;
     line-height: 1.8;
     color: var(--text-color);
+}
+
+.nursery-cta {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
 }
 
 .nursery-gallery {
@@ -446,6 +449,7 @@ nav {
     max-width: 1200px;
     margin: 3rem auto;
     padding: 0 2rem;
+    width: 100%;
 }
 
 .gallery-mosaic h2 {
@@ -460,6 +464,8 @@ nav {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
     grid-auto-rows: 250px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .mosaic-item {
@@ -478,15 +484,25 @@ nav {
     z-index: 10;
 }
 
+.mosaic-item:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
 .mosaic-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
+    display: block;
 }
 
 .mosaic-item:hover img {
     transform: scale(1.1);
+}
+
+.mosaic-item:active img {
+    transform: scale(1.05);
 }
 
 /* Make some items span multiple rows for mosaic effect */
@@ -938,9 +954,12 @@ footer p {
         grid-template-columns: 1fr;
     }
 
-    .food-gallery,
-    .nursery-gallery {
+    .food-gallery {
         grid-template-columns: 1fr;
+    }
+
+    .nursery-text {
+        text-align: center;
     }
 
     .microgreen-image {
@@ -962,31 +981,48 @@ footer p {
 
     .gallery-mosaic {
         padding: 0 1rem;
-        margin: 2rem auto;
+        margin: 2rem auto 2rem;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .gallery-mosaic h2 {
         font-size: 2rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
+        padding: 0;
     }
 
     .mosaic-grid {
         grid-template-columns: 1fr;
-        grid-auto-rows: 250px;
-        gap: 0.75rem;
+        grid-auto-rows: 220px;
+        gap: 1rem;
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
 
     .mosaic-item:nth-child(1),
-    .mosaic-item:nth-child(4) {
+    .mosaic-item:nth-child(4),
+    .mosaic-item:nth-child(7) {
         grid-row: span 1;
     }
 
-    .mosaic-item:nth-child(6) {
+    .mosaic-item:nth-child(6),
+    .mosaic-item:nth-child(10) {
         grid-column: span 1;
     }
 
+    .mosaic-item {
+        width: 100%;
+        margin: 0;
+    }
+
     .mosaic-item:hover {
-        transform: scale(1.02);
+        transform: none;
+    }
+
+    .mosaic-item:active {
+        transform: scale(0.97);
     }
 
     .contact-content {
@@ -1054,9 +1090,18 @@ footer p {
         text-shadow: 2px 2px 6px rgba(0,0,0,0.9), 1px 1px 3px rgba(0,0,0,0.7);
     }
 
+    .gallery-mosaic {
+        padding: 0 0.75rem;
+        margin: 1.5rem auto 1.5rem;
+    }
+
+    .gallery-mosaic h2 {
+        margin-bottom: 1.25rem;
+    }
+
     .mosaic-grid {
         grid-auto-rows: 200px;
-        gap: 0.5rem;
+        gap: 0.75rem;
     }
 
     .gallery-mosaic h2,
