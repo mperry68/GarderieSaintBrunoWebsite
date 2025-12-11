@@ -176,7 +176,7 @@ nav {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.6));
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.35));
     z-index: 1;
 }
 
@@ -186,9 +186,6 @@ nav {
     max-width: 800px;
     color: var(--white);
     padding: 2rem;
-    background: rgba(0, 0, 0, 0.3);
-    border-radius: 15px;
-    backdrop-filter: blur(2px);
 }
 
 .hero-content h2 {
@@ -501,7 +498,15 @@ nav {
     grid-row: span 2;
 }
 
+.mosaic-item:nth-child(7) {
+    grid-row: span 2;
+}
+
 .mosaic-item:nth-child(6) {
+    grid-column: span 2;
+}
+
+.mosaic-item:nth-child(10) {
     grid-column: span 2;
 }
 
@@ -849,7 +854,6 @@ footer p {
 
     .hero-content {
         padding: 1.5rem;
-        background: rgba(0, 0, 0, 0.4);
     }
 
     .hero-content h2 {
@@ -1038,7 +1042,6 @@ footer p {
 
     .hero-content {
         padding: 1.25rem;
-        background: rgba(0, 0, 0, 0.5);
     }
 
     .hero-content h2 {
