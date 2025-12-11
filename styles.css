@@ -136,6 +136,33 @@ nav {
     line-height: 1.6;
 }
 
+/* Notification Strip */
+.notification-strip {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, #D8965F 100%);
+    color: var(--white);
+    padding: 1.5rem 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.notification-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.notification-content p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.6;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.notification-content strong {
+    font-weight: 800;
+    font-size: 1.4rem;
+}
+
 /* Features Section */
 .features {
     background-color: var(--light-bg);
@@ -714,6 +741,18 @@ footer p {
 
     .hero-content p {
         font-size: 1.1rem;
+    }
+
+    .notification-strip {
+        padding: 1.2rem 1.5rem;
+    }
+
+    .notification-content p {
+        font-size: 1.1rem;
+    }
+
+    .notification-content strong {
+        font-size: 1.2rem;
     }
 
     .cta {
